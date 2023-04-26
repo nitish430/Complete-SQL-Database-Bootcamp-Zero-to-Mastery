@@ -13,7 +13,7 @@ SELECT * FROM titles;
 * Question: How many unique birth dates are there?
 */
 
-SELECT * FROM employees;
+SELECT Distinct(birth_date) from employees;
 
 /*
 * DB: World
@@ -22,5 +22,4 @@ SELECT * FROM employees;
 * Make sure there are no nulls
 */
 
-SELECT * FROM country;
-
+SELECT Distinct(lifeexpectancy) from country where lifeexpectancy is not null;
